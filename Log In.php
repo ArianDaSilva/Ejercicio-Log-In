@@ -8,6 +8,14 @@
     <title>Document</title>
 </head>
 <body>
+<section class="d-flex justify-content-center align-items-center">
+<form>
+<label for="user" class="form-label">User</label>
+<input type=user" class="form-control" id="user" aria-describedby="user" maxlength="15" placeholder="ej: Mario" >
+<label for="password" class="form-label">Contraseña</label>
+<input type="password" class="form-control" id="password">
+</form>
+</section>
 
     <?php
     //valido los datos Ingresados (funsión validar)
