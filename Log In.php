@@ -9,32 +9,6 @@
 </head>
 <body>
 
-
-
-
-<section class="d-flex justify-content-center align-items-center">
-    <form>
-    <br>
-  <div class="card col-sm-10 p-3">
-  <div class="mb-2">
-      <h4>Formulario</h4>
-      <i>Por favor, igrese sus datos...</i>
-  </div>
-  
-  <label for="user" class="form-label">Usuario</label>
-  <input type="nombre" class="form-control" id="exampleInputnombre" aria-describedby="user" maxlength="15" placeholder="ej: Mario" >
-    <label for="password" class="form-label">Contraseña</label>
-    <input type="password" class="form-control" id="password">
-    <div id="password" class="form-text">Recuede: debe ser unica.</div>
-</div>
-  <button type="submit" class="btn btn-primary">Enviar</button>
-  </div>
-</form>
-</section>
-
-
-
-
     <?php
     //valido los datos Ingresados (funsión validar)
     //valido las credenciales
@@ -42,7 +16,7 @@
     if($user =="admin" &&
     $pass =="admin")
     {
-    session.start();
+    session_start();
     $_SESSION ['usuario']==$user;
     header("Location:index.php");
 }else{
